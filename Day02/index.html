@@ -7,14 +7,19 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="">
-        <h1>Cadastro</h1>
-        Qual seu nome?<br>
-        <input type="text" name="nome">
-        <br>Quantos anos você tem?<br>
-        <input type="text" name="idade">
-        <br>Qual linguagem de programação você esta estudando?<br>
-        <input type="text" name="estudo">
-    </form>
+    <script>
+            var nome = window.prompt('Qual seu nome?')           
+            var idade = window.prompt('Quantos anos você tem?')           
+            var estudo = window.prompt('Qual linguagem de programação você está estudando?')
+            var gosto = window.prompt(`Você gosta de estudar ${estudo} ? Responda com o numero 1 para SIM ou 2 para NÃO`)
+            
+            document.write(`Olá ${nome}<br> você tem ${idade} anos<br> e já está aprendendo ${estudo} `)
+
+            if(gosto==1){
+                document.write(`<br><br>Muito bom! Continue estudando e você terá muito sucesso.`)
+            } else if(gosto==2){
+                document.write(`<br><br>Ahh que pena... Já tentou aprender outras linguagens?`)
+            }
+   </script>
 </body>
 </html>
