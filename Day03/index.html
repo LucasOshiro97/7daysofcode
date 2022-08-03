@@ -26,6 +26,24 @@
         } else {
             alert("Você não inseriu nenhuma das altenativas propostas")
         }
+
+        var spec = window.prompt('Digite 1 para seguir se especializando na área escolhida ou 2 para seguir se desenvolvendo para se tornar Fullstack')
+
+        if(spec==1) {
+            alert(`Muito bom a área de ${area} é muito amplo para seguir carreira!`)
+        } else if (spec==2) {
+            alert(`Muito bom a área de ${area} é muito amplo, mas se qualificar em desenvolvedor Fullstack aumenta suas chances no mercado!`)
+        }
+
+        var aprender = window.prompt('Tem mais alguma tecnologia que você gostaria de aprender? se tiver digite sim')
+
+        while(aprender=="sim") {
+            var aprender1 = window.prompt('Qual a nova tecnologia?')
+            alert(`Humm... A tecnologia ${aprender1} é realmente muito interessante!`)
+            var aprender = window.prompt('Tem mais alguma tecnologia a acrescentar? se tiver digite sim')
+        }
+
+        alert('Terminou... Muito obrigado por participar!')
     </script>
 </body>
 </html>
