@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 6
+        var n2 = 3
+
+        var n1 = window.prompt('Chute um numero:')
+
+        for(n2=3;n2=>0;--n2) {
+
+             if (n1!=n) {
+                var n1 = window.prompt(`Continue! Voce tem mais ${n2} tentativas`)
+            } else if(n1==n){
+                alert('Parabens voce acertou o numero!')
+        }
+    }   alert(`Sinto muito, voce não acertou o numero! O valor selecionado foi ${n}`)
+
+    </script>
+</body>
+</html>
